@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-gris-oscuro);
+    min-height: 100vh;
+    color: var(--color-blanco);
+    gap: 2rem;
+}
+
+main h1 {
+    text-transform: uppercase;
+}
+
+.contenedor-cards {
+    gap: 1rem;
+}
+
+.card-p {
+    width: 250px;
+    height: 180px;
+    background-color: var(--color-gris-claro);
+    font-size: 1.5rem;
+    color: var(--color-negro);
+    text-transform: uppercase;
+}
+
+.card-p:hover {
+    cursor: pointer;
+    color: var(--color-blanco);
+    box-shadow: var(--sombrita-generica);
+}
