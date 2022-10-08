@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-negro: #111;
+    --color-blanco: #eee;
+    --color-gris-oscuro: #333;
+    --color-gris-claro: #aaa;
+    --color-gris-claro-transparente: #aaa5;
+    --sombrita-generica: .15rem .15rem .4rem var(--color-gris-claro-transparente)
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var(--color-gris-oscuro);
+    min-height: 100vh;
+    color: var(--color-blanco);
+}
