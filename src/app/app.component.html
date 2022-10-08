@@ -2,14 +2,16 @@
   <h1 class="mb-2">Show CSS</h1>
 
   <section class="container d-flex flex-row justify-content-center align-items-center flex-wrap contenedor-cards">
-    <div class="card card-p d-flex justify-content-center align-items-center">Buttons</div>
-    <div class="card card-p d-flex justify-content-center align-items-center">Hover</div>
-    <div class="card card-p d-flex justify-content-center align-items-center">Menu</div>
-    <div class="card card-p d-flex justify-content-center align-items-center">Progress Bar</div>
-    <div class="card card-p d-flex justify-content-center align-items-center">Transitions</div>
-    <div class="card card-p d-flex justify-content-center align-items-center">Animations</div>
+    <div class="card card-p d-flex justify-content-center align-items-center" (click)="openButtons()">Buttons</div>
+    <div class="card card-p d-flex justify-content-center align-items-center" (click)="openHover()">Hover</div>
+    <div class="card card-p d-flex justify-content-center align-items-center" (click)="openMenu()">Menu</div>
+    <div class="card card-p d-flex justify-content-center align-items-center" (click)="openProgressbar()">Progress Bar</div>
+    <div class="card card-p d-flex justify-content-center align-items-center" (click)="openTransition()">Transitions</div>
+    <div class="card card-p d-flex justify-content-center align-items-center" (click)="openAnimation()">Animations</div>
     <!-- <div class="card card-p d-flex justify-content-center align-items-center">7</div>
     <div class="card card-p d-flex justify-content-center align-items-center">8</div> -->
-    <div class="card card-p d-flex justify-content-center align-items-center">Others</div>
+    <div class="card card-p d-flex justify-content-center align-items-center" (click)="openOthers()">Others</div>
   </section>
+
+  <router-outlet></router-outlet>
 </main>
